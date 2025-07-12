@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Employee Directory</h1>
+    <button onclick="location.href = 'form.html'">Add Employee</button>
+  </header>
+
+  <main>
+    <div id="employeeList" class="card-container">
+      <div data-id="1" class="employee-card">
+        <strong>John Doe</strong>
+        <p><strong>Email:</strong> john.doe@example.com</p>
+        <p><strong>Department:</strong> HR</p>
+        <p><strong>Role:</strong> Manager</p>
+        <div class="card-actions">
+          <button class="btn" onclick="editEmployee('1')">Edit</button>
+          <button class="btn btn-blue" onclick="deleteEmployee('1')">Delete</button>
+        </div>
+      </div>
+
+      <div data-id="2" class="employee-card">
+        <strong>Jane Smith</strong>
+        <p><strong>Email:</strong> jane.smith@example.com</p>
+        <p><strong>Department:</strong> IT</p>
+        <p><strong>Role:</strong> Developer</p>
+        <div class="card-actions">
+          <button class="btn" onclick="editEmployee('2')">Edit</button>
+          <button class="btn btn-blue" onclick="deleteEmployee('2')">Delete</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">2025 Employee Directory App. All rights reserved.</footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
